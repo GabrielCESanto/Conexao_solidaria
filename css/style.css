@@ -35,6 +35,7 @@
 .vermelho { color: #d3180c; }
 .azul { color: #025dcc; }
 .verde { color: #008100; }
+.preto { color: #000000;}
 
 .title { width:100%; float:left; margin-top:40px; margin-bottom:40px; padding-bottom:10px;  font-family: sans-serif; font-size:2em; font-weight:bold; text-transform:uppercase; }
 .title.center {text-align:center; }
@@ -310,9 +311,11 @@ img { max-width:100%; vertical-align:middle; }
 /*CADASTRO*/
 
 .section-cadastro              { 
-    background-color:#025dcc5d; 
-    background-image: url("../img/futurista.jpg");
-    background-size: 100%;
+    background-color:#025dcc; 
+    background-image: url("/img/futurista.jpg");
+    background-size: cover;
+    background-attachment: fixed; /* Isso fixa a imagem de fundo para que ela não role com o conteúdo */
+    min-height: 100vh;
 }
 
 .section-cadastro .container   { 
@@ -331,12 +334,13 @@ img { max-width:100%; vertical-align:middle; }
 .section-cadastro .caixa      { 
     align-content: center;
     background-color:#fff; 
-    width: 50%; 
+    width: 60%; 
     font-size: 30px; 
     border-radius: 15px; 
     box-shadow:50px 50px 50px rgba(0, 0, 0, 0.715); 
     margin: auto;
-    margin-bottom: 90px;
+    margin-bottom: 100px;
+    padding-left: 80px;
  
 }
 
@@ -377,14 +381,13 @@ img { max-width:100%; vertical-align:middle; }
 }
 
 .formulario .btn-enviar  { 
-    width:160px; 
+    width:130px; 
     background-color:#025dcc; 
     color:#ffffff; 
     border:none; 
     border-radius:8px; 
-    cursor:pointer; 
-    padding:0.5em 0em; 
-    font-size:1.5em; 
+    cursor:pointer;  
+    font-size:1.2em; 
     font-family:Arial; 
     transition: 0.2s;
     margin-top: 30px;
@@ -407,6 +410,128 @@ img { max-width:100%; vertical-align:middle; }
     font-size: 20px;
     margin-bottom: 50px;
 }
+
+/* ADMIN */
+
+.section-cadastro .caixaAdm     { 
+    align-content: center;
+    background-color:#fff; 
+    width: 60%; 
+    font-size: 30px; 
+    border-radius: 15px; 
+    box-shadow:50px 50px 50px rgba(0, 0, 0, 0.715); 
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+}
+
+.addBtn {
+    padding: 10px;
+    width: 25%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.user-item {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.formulario .btn-envio  { 
+    width:200px; 
+    background-color:#025dcc; 
+    color:#ffffff; 
+    border:none; 
+    border-radius:8px; 
+    cursor:pointer; 
+    padding:0.5em 0em; 
+    font-size:0.6em; 
+    font-family:Arial; 
+    transition: 0.2s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+
+.formulario .btn-envio:hover { 
+    background-color:#0369f8c0; 
+}
+
+
+.formulario .campos     {
+    font-size:1.0em; 
+    color:#7b7979; 
+    font-family:Arial; 
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:8px; 
+    transition:.5s; 
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.formulario .campos:focus { 
+    border: 1px rgba(5, 60, 239, 0.573) solid; 
+    color: #0656f698; 
+}
+
+.formulario .campop     {
+    font-size:1.0em; 
+    color:#7b7979; 
+    font-family:Arial; 
+    outline:none; 
+    border:1px #dee5ed solid; 
+    border-radius:8px; 
+    transition:.5s; 
+    text-align: center;
+    width: 100%;
+}
+
+.formulario .campop:focus { 
+    border: 1px rgba(5, 60, 239, 0.573) solid; 
+    color: #0656f698; 
+}
+
+.view {
+    font-size:0.5em; 
+    color:#025dcc; 
+    font-family:Arial; 
+    outline:none; 
+    border:1px #025dcc solid; 
+    border-radius:8px; 
+    transition:.5s; 
+    text-align: left;
+    margin-top: 130px;
+    width: 100%; 
+}
+
+.delete-button {
+    margin-top: 10px;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.titlep { width:100%; float:left; margin-top:30px; margin-bottom:40px; padding-bottom:10px;  font-family: Arial; font-size:0.7em; font-weight:bold; text-transform:uppercase; color: #025dcc }
 
 /*FOOTER*/
 

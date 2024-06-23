@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+	
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+    
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/Logo.png">
+    
+        <title>Conexão solidária - Cadastro de novos usuários</title>
+    
+     </head>
+    
+<body>
+    <section id="cadastro" class="section-cadastro container">
+        
+        <div class="contents">
+       
+            <h2 class="title branco">Cadastro de novos usuários</h2>
+                <div class="caixaAdm">   
+                <form class="formulario">
+                    <label for="name">
+                    <input type="text" id="name" name="name" class="campos" placeholder="Nome do usuário"><br><br></label>
+                    <label for="email">
+                    <input type="email" id="email" name="email" class="campos" placeholder="E-mail" required><br><br>
+                    <button type="button" id="saveButton" class="btn-envio"> Salvar</button>
+                    <button type="button" id="clearFormButton" class="btn-envio">Limpar Formulário</button>
+                    <button type="button" id="clearStorageButton" class="btn-envio">Limpar Local Storage</button>
+                    <input type="text" id="searchInput" class="campop" placeholder="Digite aqui para pesquisar...">
+                </form>
+                <h2 class ="titlep" >Usuários Cadastrados: </h2>
+                <div>
+                    <div id="users" class="view"></div>
+                </div> 
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>      
+</body>
+</html>
